@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прайс для цветочных</title>
+    <style>
+        /* Основной стиль */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e2f;
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            padding: 30px 10%;
+        }
+
+        /* Заголовок */
+        h1 {
+            text-align: center;
+            color: #00aaff;
+            margin-bottom: 40px;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+
+        /* Карточки услуг */
+        .service-item {
+            background-color: #2d2d3b;
+            border-radius: 15px;
+            margin: 20px 0;
+            padding: 25px;
+            box-shadow: 0 4px 25px rgba(81, 0, 255, 0.3);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 40px rgba(0, 170, 255, 0.5);
+        }
+
+        .service-item h2 {
+            color: #00aaff;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        .service-item p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            color: #ff6f61;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .service-item ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1em;
+        }
+
+        .service-item ul li {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .service-item ul li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #00aaff;
+        }
+
+        /* Дополнительные услуги */
+        .additional-services {
+            background-color: #2d2d3b;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 40px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .additional-services h2 {
+            color: #00aaff;
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+
+        .additional-services ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1em;
+        }
+
+        .additional-services ul li {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .additional-services ul li::before {
+            content: "✔️";
+            margin-right: 10px;
+            color: #00aaff;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background-color: #1e1e2f;
+            padding: 15px 0;
+            margin-top: 50px;
+            color: #aaa;
+            font-size: 1em;
+        }
+
+        /* Анимации */
+        .service-item, .additional-services {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 5%;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .service-item h2 {
+                font-size: 1.8em;
+            }
+
+            .service-item p, .service-item ul li {
+                font-size: 1em;
+            }
+
+            .service-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>ПРАЙС</h1>
+
+        <!-- Варианты сайтов -->
+        <div class="service-item">
+            <h2>1. Микро-сайт / Сайт-визитка <br> от <span class="price">25 000 ₸</span></h2>
+            <p>Мини-страница для быстрого старта:</p>
+            <ul>
+                <li>Название магазина</li>
+                <li>Фото и описание</li>
+                <li>Контакты + кнопки WhatsApp / Instagram</li>
+            </ul>
+            <p>📱 Адаптирован под смартфоны</p>
+            <p>🕐 Готов за 1–2 дня</p>
+        </div>
+
+        <div class="service-item">
+            <h2>2. Лендинг / Одностраничный сайт <br> от <span class="price">40 000 ₸</span></h2>
+            <p>Красивая, современная страница:</p>
+            <ul>
+                <li>Инфо о магазине</li>
+                <li>Галерея букетов</li>
+                <li>Цены по категориям</li>
+            </ul>
+            <p>⚡️ Быстрая загрузка и SEO</p>
+            <p>📆 Срок: 3–5 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>3. Сайт-каталог (без корзины) <br> от <span class="price">60 000 ₸</span></h2>
+            <p>Каталог букетов по категориям (8–10 штук), фильтры по цене:</p>
+            <ul>
+                <li>Красивые карточки с фото</li>
+                <li>Заказ через WhatsApp</li>
+                <li>Возможность сортировки</li>
+            </ul>
+            <p>🧩 Идеален для Instagram-магазинов</p>
+            <p>📆 Срок: 4–6 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>4. Сайт-витрина (до 5 страниц) <br> от <span class="price">70 000 ₸</span></h2>
+            <p>Больше контента и доверия:</p>
+            <ul>
+                <li>Главная, Каталог, О магазине, Доставка, Контакты</li>
+                <li>Интеграция карты</li>
+                <li>Возможность добавить раздел "Отзывы"</li>
+            </ul>
+            <p>📱 Полностью адаптивный</p>
+            <p>📆 Срок: 5–7 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>5. Интернет-магазин (с корзиной) <br> от <span class="price">150 000 ₸</span></h2>
+            <p>Полноценный онлайн-магазин:</p>
+            <ul>
+                <li>Каталог с описаниями</li>
+                <li>Корзина и оформление заказов</li>
+                <li>Онлайн-оплата</li>
+            </ul>
+            <p>📦 Подходит для расширения бизнеса</p>
+            <p>📆 Срок: 7–14 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>6. Квиз-сайт (сбор заявок через вопросы) <br> от <span class="price">50 000 ₸</span></h2>
+            <p>Например: “Какой букет вам подойдет?”</p>
+            <ul>
+                <li>Простой и цепляющий</li>
+                <li>Привлекает заявки</li>
+                <li>Отправка в WhatsApp</li>
+            </ul>
+            <p>🎯 Отлично для рекламы</p>
+            <p>📆 Срок: 3–5 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>7. Сайт-портфолио / Галерея <br> от <span class="price">45 000 ₸</span></h2>
+            <p>Фокус на фотографиях букетов:</p>
+            <ul>
+                <li>Категории: Свадебные, Сезонные, VIP</li>
+                <li>Большая галерея</li>
+                <li>Заказ по номеру или WhatsApp</li>
+            </ul>
+            <p>📸 Идеален для флористов</p>
+            <p>📆 Срок: 3–5 дней</p>
+        </div>
+
+        <div class="service-item">
+            <h2>8. Интерактивный сайт / Креативный формат <br> от <span class="price">100 000 ₸</span></h2>
+            <p>Можно реализовать в виде квеста, выбора настроения и т.п.</p>
+            <ul>
+                <li>Игровой стиль</li>
+                <li>Максимум вовлечения</li>
+            </ul>
+            <p>🧠 Уникальный формат — конкурентов нет</p>
+            <p>📆 Срок: 7+ дней</p>
+        </div>
+
+        <!-- Дополнительные услуги -->
+        <div class="additional-services">
+            <h2>➕ Дополнительные услуги:</h2>
+            <ul>
+                <li>Настройка домена/хостинга — от 10 000 ₸</li>
+                <li>SEO-оптимизация — от 15 000 ₸</li>
+                <li>Добавление 20 карточек товаров — включено</li>
+                <li>Доп. товар — +500 ₸ / шт</li>
+                <li>Слайдеры, видео, анимации — от 5 000 ₸</li>
+                <li>Мультиязычность (RU/KZ/EN) — от 15 000 ₸</li>
+                <li>Личный кабинет администратора — от 20 000 ₸</li>
+                <li>Обслуживание и обновления — по договоренности</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Разработано TIM</p>
+        </footer>
+    </div>
+
+</body>
+</html>
